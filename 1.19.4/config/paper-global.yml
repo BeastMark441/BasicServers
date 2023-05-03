@@ -57,11 +57,10 @@ logging:
 messages:
   kick:
     authentication-servers-down: <lang:multiplayer.disconnect.authservers_down>
-    connection-throttle: Connection throttled! Please wait before reconnecting.
+    connection-throttle: Соединение прервано! Пожалуйста, подождите перед повторным подключением
     flying-player: <lang:multiplayer.disconnect.flying>
-    flying-vehicle: <lang:multiplayer.disconnect.flying>
-  no-permission: <red>I'm sorry, but you do not have permission to perform this command.
-    Please contact the server administrators if you believe that this is in error.
+    flying-vehicle: <lang:multiplayer.disconnect.flying> 
+  no-permission: <red>У Вас нет прав для использования этой команды
   use-display-name-in-quit-message: false
 misc:
   chat-threads:
@@ -70,11 +69,11 @@ misc:
   fix-entity-position-desync: true
   lag-compensate-block-breaking: true
   load-permissions-yml-before-plugins: true
-  max-joins-per-tick: 5
+  max-joins-per-tick: 2
   region-file-cache-size: 256
   strict-advancement-dimension-check: false
-  use-alternative-luck-formula: false
-  use-dimension-type-for-custom-spawners: false
+  use-alternative-luck-formula: true
+  use-dimension-type-for-custom-spawners: true
 packet-limiter:
   all-packets:
     action: KICK
@@ -107,16 +106,16 @@ spam-limiter:
   tab-spam-increment: 1
   tab-spam-limit: 500
 timings:
-  enabled: true
+  enabled: false
   hidden-config-entries:
   - database
   - proxies.velocity.secret
   history-interval: 300
   history-length: 3600
-  server-name: Unknown Server
+  server-name: Server
   server-name-privacy: false
   url: https://timings.aikar.co/
-  verbose: true
+  verbose: false
 unsupported-settings:
   allow-grindstone-overstacking: false
   allow-headless-pistons: false
